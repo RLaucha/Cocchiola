@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Empresa | COCCHIOLA S.A.</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest"><meta name="theme-color" content="#01963f">
+
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40"></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
+    <nav class="menu" id="siteMenu">
+      <a href="index.html">Inicio</a>
+      <a aria-current="page" href="empresa.html">Empresa</a>
+      <div class="dropdown">
+        <button class="dropbtn">Máquinas</button>
+        <div class="dropdown-menu">
+          <a href="maquinas/electroerosion.html">Electroerosión</a>
+          <a href="maquinas/industria-plastica.html">Industria Plástica</a>
+          <a href="maquinas/corte-laser.html">Corte Láser</a>
+          <a href="maquinas/roscadoras.html">Roscadoras</a>
+          <a href="maquinas/maquinas-herramienta.html">Máquinas Herramienta</a>
+          <a href="maquinas/inyeccion-no-ferrosos.html">Inyección de no ferrosos</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Insumos</button>
+        <div class="dropdown-menu">
+          <a href="insumos/electroerosion.html">Electroerosión</a>
+          <a href="insumos/industria-plastica.html">Industria Plástica</a>
+        </div>
+      </div>
+      <a class="btn btn--primary" href="index.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <!-- Presentación -->
+  <section class="card">
+    <h1 class="font-display">Empresa</h1>
+    <p>Somos una Empresa integrada por personal con experiencia en el mercado de la máquina herramienta, máquinas de la industria del plástico y automatización industrial. Nuestras prioridades son el servicio, la eficiencia y la búsqueda de la excelencia.</p>
+  </section>
+
+<!-- Mapa / Cómo llegar -->
+<section class="card">
+  <h2 class="font-display">Dónde estamos</h2>
+  <p class="muted" style="margin-top:-4px">
+    Parque Industrial “La Cantábrica” — <strong>Tres Arroyos 329, Haedo</strong> — Tel.: (+54 11) 6091 7765
+  </p>
+
+  <div class="map">
+    <iframe
+      class="map__frame"
+      title="Ubicación COCCHIOLA S.A."
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Tres+Arroyos+329,+Haedo,+Provincia+de+Buenos+Aires&z=16&output=embed&hl=es">
+    </iframe>
+  </div>
+
+  <div class="map__actions">
+    <a class="btn btn--primary" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/dir/?api=1&destination=Tres+Arroyos+329,+Haedo&travelmode=driving">Cómo llegar (Google Maps)</a>
+    <a class="btn btn--outline" target="_blank" rel="noopener"
+       href="https://ul.waze.com/ul?ll=-34.640,-58.592&navigate=yes">Abrir en Waze</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <small>© M. A. COCCHIOLA S.A. — Todos los derechos reservados</small>
+    <small>Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — (+54 11) 6091 7765</small>
+  </div>
+</footer>
+
+<a href="https://wa.me/5491130227007" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path d="M19.11 17.33c-.27-.15-1.57-.86-1.81-.96-.24-.09-.42-.15-.6.15-.18.3-.69.96-.85 1.15-.16.18-.31.21-.58.06-.27-.15-1.12-.41-2.15-1.31-.79-.7-1.32-1.57-1.48-1.84-.16-.27-.02-.42.12-.57.12-.12.27-.31.39-.46.13-.15.18-.27.27-.45.09-.18.06-.33-.03-.48-.09-.15-.6-1.44-.82-1.96-.22-.52-.44-.45-.6-.45-.15 0-.33-.03-.51-.03-.18 0-.48.06-.73.33-.24.27-.96.93-.96 2.27s.99 2.64 1.13 2.82c.15.18 1.96 2.97 4.75 4.06.66.27 1.18.42 1.59.54.67.21 1.28.18 1.76.11.54-.08 1.57-.64 1.8-1.25.22-.61.22-1.13.15-1.25-.06-.12-.24-.18-.51-.33z" fill="currentColor"/><path d="M26.6 5.4C24.2 3 21.2 1.8 18 1.8 10.5 1.8 4.5 7.8 4.5 15.3c0 2.4.6 4.7 1.8 6.7l-1.9 7 7.1-1.9c1.9 1 4.2 1.6 6.5 1.6 7.5 0 13.5-6 13.5-13.5 0-3.2-1.2-6.2-3.5-8.6zm-8.6 22.8c-2.1 0-4.1-.6-5.8-1.6l-.42-.25-4.2 1.1 1.1-4.1-.27-.43c-1.1-1.8-1.7-3.9-1.7-6 0-6.4 5.2-11.6 11.6-11.6 3.1 0 6 1.2 8.2 3.4 2.2 2.2 3.4 5.1 3.4 8.2 0 6.4-5.2 11.6-11.6 11.6z" fill="currentColor"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
