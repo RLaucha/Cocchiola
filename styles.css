@@ -1,0 +1,556 @@
+/* ========== Tokens de marca y bases ========== */
+:root{
+  --brand-600:#086730;
+  --brand-500:#01963f;
+  --brand-400:#2ca65e;
+  --brand-50:#cde4d2;
+
+  --bg:#ffffff;
+  --text:#111418;
+  --muted:#5a6372;
+  --line:#e8eef2;
+  --surface:#f7faf8;
+
+  --radius:14px;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+  --container:1200px;
+
+  /* Tipografía fluida */
+  --fs-body: clamp(15px, 1.1vw + 0.6rem, 18px);
+  --fs-h1: clamp(28px, 3.2vw + 1rem, 44px);
+  --fs-h2: clamp(22px, 2.2vw + .8rem, 32px);
+  --fs-h3: clamp(18px, 1.4vw + .7rem, 24px);
+
+  /* Espaciado fluido */
+  --space-1: clamp(6px, 0.6vw, 10px);
+  --space-2: clamp(10px, 1vw, 16px);
+  --space-3: clamp(16px, 1.6vw, 24px);
+  --space-4: clamp(24px, 2.6vw, 40px);
+}
+
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  background:var(--bg); color:var(--text);
+  font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  font-size:var(--fs-body); line-height:1.55;
+  -webkit-text-size-adjust:100%;
+  text-rendering:optimizeLegibility;
+}
+img{max-width:100%;height:auto;display:block}
+picture{display:block}
+a{color:var(--brand-600);text-decoration:none}
+a:hover{color:var(--brand-500)}
+:focus-visible{outline:2px solid var(--brand-400);outline-offset:2px}
+
+.container{max-width:var(--container);margin:auto;padding:0 var(--space-2)}
+
+/* ========== Header / Nav ========== */
+.site-header{
+  position:sticky; top:0; z-index:50;
+  background:#fff; border-bottom:1px solid var(--line);
+  -webkit-backdrop-filter:saturate(140%) blur(6px);
+  backdrop-filter:saturate(140%) blur(6px);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:700}
+
+.menu{
+  display:flex; align-items:center; gap:var(--space-2);
+}
+.menu a{padding:.5rem .6rem;border-radius:10px;line-height:1}
+.menu .btn{margin-left:.4rem}
+
+.nav-toggle{
+  display:none; flex-direction:column; gap:4px;
+  background:transparent; border:0; cursor:pointer;
+}
+.nav-toggle span{width:24px;height:2px;background:#222;display:block;border-radius:2px}
+
+/* Dropdown */
+.dropdown{position:relative}
+.dropbtn{
+  background:transparent;border:0;cursor:pointer;
+  font:inherit;color:var(--text);padding:.5rem .6rem;border-radius:10px;
+}
+.dropdown-menu{
+  position:absolute; top:100%; left:0; min-width:240px;
+  background:#fff; border:1px solid var(--line); border-radius:12px;
+  box-shadow:var(--shadow); padding:.4rem; display:none;
+}
+.dropdown:hover .dropdown-menu{display:block}
+.dropdown-menu a{display:block;padding:.6rem .7rem;border-radius:8px;color:var(--text)}
+.dropdown-menu a:hover{background:var(--surface)}
+
+/* ========== Botones ========== */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  border:1px solid var(--line); background:#fff; color:var(--text);
+  padding:.75rem 1rem; border-radius:12px; box-shadow:0 1px 0 rgba(0,0,0,.02);
+  min-height:44px; /* cómodo para dedo */
+}
+.btn--primary{background:var(--brand-500);border-color:var(--brand-500);color:#fff}
+.btn--primary:hover{background:var(--brand-600)}
+.btn--outline{background:#fff;border:1px solid var(--brand-500);color:var(--brand-600)}
+.link{color:var(--brand-600);font-weight:600}
+
+/* ========== Layouts ========== */
+h1{font-size:var(--fs-h1); line-height:1.15; margin:0 0 var(--space-2)}
+h2{font-size:var(--fs-h2); line-height:1.2; margin:0 0 var(--space-2)}
+h3{font-size:var(--fs-h3); line-height:1.25; margin:.2rem 0 var(--space-1)}
+
+.hero{
+  padding:var(--space-4) 0;
+  display:grid; gap:var(--space-3);
+  grid-template-columns:1.1fr 1fr; align-items:center;
+}
+.hero__media img{border-radius:14px}
+.hero__cta{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.6rem}
+
+.card{
+  background:#fff; border:1px solid var(--line);
+  border-radius:var(--radius); box-shadow:var(--shadow);
+  padding:var(--space-3);
+}
+
+.grid{display:grid; gap:var(--space-2)}
+/* Grilla auto-ajustable (reutilizable): se adapta sola a ancho disponible */
+.grid-auto{grid-template-columns:repeat(auto-fit, minmax(260px,1fr))}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr); margin:var(--space-3) auto}
+
+/* Formularios */
+.form input,.form textarea{
+  width:100%; padding:1rem; border:1px solid var(--line);
+  border-radius:12px; background:#fff; font:inherit;
+}
+.form input:focus,.form textarea:focus{outline:2px solid var(--brand-50);border-color:var(--brand-400)}
+.muted{color:var(--muted)}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--line); margin-top:var(--space-4); background:#fff}
+.footer__grid{display:grid; gap:.5rem; padding:20px 0; color:var(--muted); font-size:.95rem}
+
+/* WhatsApp flotante */
+.wa-float{
+  position:fixed; right:18px; bottom:18px; width:56px; height:56px;
+  display:grid; place-items:center; border-radius:999px;
+  background:var(--brand-500); color:#fff; box-shadow:0 10px 30px rgba(0,0,0,.15); z-index:1000;
+  transition:transform .2s ease;
+}
+.wa-float:hover{background:var(--brand-600); transform:translateY(-2px)}
+
+/* ========== Responsivo ========== */
+@media (max-width: 1024px){
+  .hero{grid-template-columns:1fr}
+}
+@media (max-width: 860px){
+  .menu{
+    display:none; position:absolute; inset:auto var(--space-2) auto auto;
+    top:68px; right:var(--space-2);
+    flex-direction:column; align-items:flex-start;
+    background:#fff; border:1px solid var(--line); border-radius:14px;
+    box-shadow:var(--shadow); padding:var(--space-2); min-width:min(88vw,420px);
+  }
+  .menu a,.dropbtn{padding:.6rem .8rem; width:100%}
+  .nav-toggle{display:flex}
+  .dropdown:hover .dropdown-menu{display:none}
+  .dropdown.open .dropdown-menu{
+    display:block; position:relative; border:none; box-shadow:none; padding:0; margin:0; min-width:unset;
+  }
+  /* Grillas más cómodas en móvil */
+  .grid-3,.grid-2{grid-template-columns:1fr}
+}
+
+/* Reduce motion si el usuario lo pidió */
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important; transition:none!important; scroll-behavior:auto!important}
+}
+/* ====== Dark mode automático (respeta preferencias del sistema) ====== */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0e1113;
+    --text:#e6e9ee;
+    --muted:#a7b0bd;
+    --surface:#15191d;
+    --line:#28313a;
+
+    --brand-600:#68e39d;   /* verdes luminosos en dark */
+    --brand-500:#3ddc84;
+    --brand-400:#31c673;
+    --brand-50:#1a2a20;
+    --shadow:0 10px 30px rgba(0,0,0,.45);
+  }
+  .site-header,
+  .site-footer,
+  .card,
+  .dropdown-menu,
+  .btn{ background:var(--surface); }
+  .site-header{ border-bottom:1px solid var(--line); }
+  .site-footer{ border-top:1px solid var(--line); }
+  .btn{ border-color:var(--line); color:var(--text); }
+  .btn--outline{ background:transparent; border-color:var(--brand-500); color:var(--brand-500); }
+  .menu a,.dropbtn{ color:var(--text); }
+  .dropdown-menu a:hover{ background:#0f1316; }
+  .nav-toggle span{ background:#e6e9ee; }
+}
+/* === HOTFIX DE TAMAÑOS & RESPONSIVE === */
+
+/* 1) Logo siempre controlado (evita que "explote" en el header) */
+.brand img{
+  height:40px !important;
+  width:auto !important;
+  max-width: 180px;
+  display:block;
+}
+@media (max-width: 860px){
+  .brand img{ height:34px !important; max-width:160px; }
+}
+
+/* 2) Grillas más cómodas: auto-fit con mínimo 300px (no se aprietan) */
+.grid,
+.grid-2,
+.grid-3,
+.grid-auto{
+  display:grid;
+  gap: var(--space-2);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* 3) Imágenes de cards con recorte elegante y altura consistente */
+.card picture{ 
+  display:block; 
+  width:100%; 
+  aspect-ratio: 16 / 10; 
+  overflow:hidden; 
+  border-radius:12px; 
+}
+.card picture img{ 
+  width:100%; 
+  height:100%; 
+  object-fit: cover; 
+  object-position:center; 
+}
+
+/* 4) Tablas de especificaciones: tipografía y respiración en mobile */
+.specs{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+  font-size: clamp(13px, 1vw + .2rem, 16px);
+}
+.specs thead th{ 
+  background:var(--surface); 
+  font-weight:700; 
+  padding:.8rem; 
+  border-bottom:1px solid var(--line); 
+  text-align:left;
+}
+.specs td{ padding:.7rem; border-bottom:1px solid var(--line) }
+.specs tr:last-child td{ border-bottom:0 }
+.specs td:first-child{ width:42%; color:var(--muted) }
+
+/* 5) Contenedor: un poco más de margen en pantallas pequeñas */
+.container{ padding-left:16px; padding-right:16px }
+
+/* 6) Header estable (evita solaparse por alto del logo) */
+.site-header{ min-height:68px; }
+
+/* 7) Las imágenes nunca exceden su caja */
+img{ max-width:100%; height:auto; display:block }
+/* ====== RITMO VERTICAL / ESPACIADOS GLOBALES ====== */
+/* Escala de espacios */
+:root{
+  --space-0: 0px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 72px;
+}
+
+/* Separación general entre bloques del main */
+main > section,
+main > .container,
+.container > section {
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+/* En desktop damos un poco más de aire */
+@media (min-width: 992px){
+  main > section,
+  main > .container,
+  .container > section {
+    margin-top: var(--space-5);
+    margin-bottom: var(--space-5);
+  }
+}
+
+/* Hero: que no “pegue” con lo de arriba/abajo */
+.hero{
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+/* Cards: padding y separación consistente */
+.card{
+  padding: var(--space-3);
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-3);
+  box-shadow: var(--shadow);
+}
+
+/* Títulos de sección con aire inferior */
+h1, h2{
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+
+/* Grids: más respiración vertical entre tarjetas */
+.grid,
+.grid-2,
+.grid-3,
+.grid-auto{
+  display: grid;
+  gap: var(--space-3); /* vertical y horizontal */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Footer: que no quede pegado al último bloque */
+.site-footer{
+  margin-top: var(--space-5);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+}
+
+/* Header y primer bloque: evitamos “pegarse” al borde */
+.site-header{ padding-top: var(--space-2); padding-bottom: var(--space-2); }
+main{ padding-left: 0; padding-right: 0; }
+
+/* Formularios: espacio entre campos y con el bloque inferior */
+.form{ margin-top: var(--space-2); }
+.form .grid-2{ gap: var(--space-2); }
+.form input, .form textarea{ margin-bottom: var(--space-2); }
+
+/* WhatsApp flotante: que no tape nada útil en el borde */
+.wa-float{ margin-bottom: var(--space-3); }
+
+/* ====== (reconf) del logo para que no invada el header ====== */
+.brand img{
+  height:40px !important;
+  width:auto !important;
+  max-width:180px;
+  display:block;
+}
+@media (max-width: 860px){
+  .brand img{ height:34px !important; max-width:160px; }
+}
+/* ====== BODIAC: fuente para títulos ====== */
+@font-face{
+  font-family: "BODIAC";
+  src: url("assets/fonts/BODIAC.woff2") format("woff2"),
+       url("assets/fonts/BODIAC.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+:root{
+  --font-display: "BODIAC", "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+h1, h2, .font-display{
+  font-family: var(--font-display);
+  letter-spacing: .2px;
+}
+
+/* ====== Ventana estética (splash/modal) con logo ====== */
+.splash-backdrop{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 24px;
+}
+.splash{
+  width: min(720px, 92vw);
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 28px 28px 24px;
+  position: relative;
+  transform: translateY(12px);
+  opacity: 0;
+  transition: opacity .3s ease, transform .3s ease;
+}
+.splash-backdrop.is-open{ display: flex; }
+.splash-backdrop.is-open .splash{ opacity: 1; transform: translateY(0); }
+
+.splash__close{
+  position: absolute;
+  top: 12px; right: 12px;
+  width: 38px; height: 38px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+.splash__logo{
+  display: block; margin: 0 auto 12px auto; height: 64px; width: auto;
+}
+.splash h2{ 
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.2vw, 36px);
+  margin: 8px 0 8px;
+  text-align: center;
+}
+.splash p{ 
+  text-align: center; 
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+.splash__actions{
+  display: flex; gap: 12px; justify-content: center; align-items: center; flex-wrap: wrap;
+}
+.splash .btn{ min-width: 180px; }
+/* Mapa más chico */
+.map{
+  width: 100%;
+  max-width: 720px;    /* no se estira más de 720px */
+  height: 300px;       /* más bajito */
+  margin: 0 auto;      /* centrado */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: #0e1113;
+}
+.map__frame{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+@media (max-width: 768px){
+  .map{ height: 220px; }
+}
+/* ===== Mapa estilizado (compacto y limpio) ===== */
+.map{
+  width: 100%;
+  max-width: 820px;       /* límite de ancho en desktop */
+  margin: 12px auto 0;    /* centrado dentro de la card */
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: #0e1113;
+  height: 320px;          /* alto compacto */
+}
+.map__frame{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  /* leve integración con dark (sacalo si no te gusta) */
+  filter: grayscale(10%) contrast(1.05) saturate(0.95);
+}
+.map__actions{
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px){
+  .map{ height: 260px; }
+  .map__actions .btn{ flex: 1 1 100%; } /* botones a todo el ancho en móvil */
+}
+/* ===== Hero con logo + cuadrados ===== */
+.hero-brand{
+  display: grid;
+  align-items: center;
+  gap: var(--space-4);
+  grid-template-columns: 1.15fr 0.85fr; /* texto / imagen */
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.hero-brand__text h1{
+  line-height: 1.1;
+  margin-bottom: var(--space-2);
+}
+
+.hero-brand__media{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-brand__media img{
+  width: 100%;
+  max-width: 640px;      /* límite para que no “explote” */
+  max-height: 320px;     /* altura contenida */
+  object-fit: contain;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,.25)); /* se integra mejor en dark */
+}
+
+/* Responsive */
+@media (max-width: 1024px){
+  .hero-brand{ grid-template-columns: 1fr 1fr; }
+  .hero-brand__media img{ max-width: 520px; max-height: 280px; }
+}
+
+@media (max-width: 860px){
+  .hero-brand{
+    grid-template-columns: 1fr;          /* apila */
+    text-align: left;
+  }
+  .hero-brand__media{
+    order: -1;                            /* imagen arriba del texto (más “impacto”) */
+    margin-bottom: var(--space-2);
+  }
+  .hero-brand__media img{
+    max-width: 90%;
+    max-height: 220px;
+    margin-inline: auto;
+  }
+}
+/* === Imágenes de cards: sin recortes (contain) y tamaño consistente === */
+/* Contenedor de la imagen con relación estándar (podés ajustar 4/3, 16/10, etc.) */
+.card picture{
+  display: flex;
+  width: 100%;
+  aspect-ratio: 4 / 3;      /* más universal para máquinas; cambiá si lo necesitás */
+  overflow: hidden;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface); /* letterboxing elegante si la foto no llena */
+  border: 1px solid var(--line);
+}
+
+/* La imagen se muestra completa, sin recortes */
+.card picture img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* <— clave: NO recorta */
+  object-position: center;
+}
+
+/* En mobile, un poquito más alto para legibilidad */
+@media (max-width: 768px){
+  .card picture{ aspect-ratio: 16 / 12; }
+}
+
+/* Utilidad opcional para casos puntuales donde SÍ quieras llenar la caja */
+.img-cover{ object-fit: cover !important; }
