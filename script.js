@@ -40,7 +40,7 @@ window.addEventListener('load', smoothAnchorFix);
 // Form simple (mailto). Si luego usás Formspree/Netlify, reemplazá este bloque.
 document.getElementById('contactForm')?.addEventListener('submit', (e)=>{
   e.preventDefault();
-  window.location.href = 'mailto:administracion@cocchiola.com.ar'
+  window.location.href = 'mailto:ventas@cocchiola.com.ar'
     + '?subject=' + encodeURIComponent('Consulta desde la web')
     + '&body=' + encodeURIComponent('Hola, necesito asesoramiento. ');
 });
@@ -214,3 +214,5 @@ form?.addEventListener('submit', async (e)=>{
     if (root.dataset.autoplay !== 'false') play();
   });
 })();
+
+
