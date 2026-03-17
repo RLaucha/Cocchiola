@@ -3,53 +3,139 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Todas las Líneas | COCCHIOLA S.A.</title>
+  <title>Nuestras Representadas | COCCHIOLA S.A.</title>
+  <meta name="description" content="Conocé las marcas internacionales que M.A. COCCHIOLA S.A. representa en Argentina: máquinas y equipos de primera línea para la industria metalmecánica y plástica." />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+  <link rel="manifest" href="../assets/site.webmanifest"><meta name="theme-color" content="#01963f">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <main class="container">
-    <section class="card" style="margin-bottom: 2rem;">
-      <h1>Todas nuestras líneas</h1>
-      <p>Explora nuestra gama completa de máquinas y equipos industriales.</p>
-    </section>
-
-    <section class="grid grid-auto">
-      
-      <article class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-          <picture>
-            <img src="../assets/img/maquina16.png" alt="Inyectora de plástico" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
-          </picture>
-          <h3 style="margin-top: 1rem;">Inyectora de plástico SSF720</h3>
-          <p>Ideal para grandes producciones continuas.</p>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html"><img src="../assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40"></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
+    <nav class="menu" id="siteMenu">
+      <a href="../index.html">Inicio</a>
+      <a href="../empresa.html">Empresa</a>
+      <div class="dropdown"><button class="dropbtn" aria-current="page">Máquinas</button>
+        <div class="dropdown-menu">
+          <a href="electroerosion.html">Electroerosión</a>
+          <a href="industria-plastica.html">Industria Plástica</a>
+          <a href="corte-laser.html">Corte Láser</a>
+          <a href="roscadoras.html">Roscadoras</a>
+          <a href="maquinas-herramienta.html">Máquinas Herramienta</a>
         </div>
-        
-        <div style="margin-top: 1.5rem; text-align: center; border-top: 1px solid var(--line); padding-top: 1rem;">
-          <p style="font-size: 0.85rem; color: var(--muted); margin-bottom: 0.5rem;">Fabricante:</p>
-          <a href="#" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
-            <img src="../assets/img/logo-borche-ejemplo.png" alt="Borche" style="max-height: 40px; display: block; margin: 0 auto;" onerror="this.outerHTML='<strong style=\'color: var(--brand-500);\'>BORCHE (Clic aquí)</strong>'">
+      </div>
+<div class="dropdown">
+  <button class="dropbtn">Insumos</button>
+  <div class="dropdown-menu">
+    <a href="../insumos/electroerosion.html">Electroerosión</a>
+    <a href="../insumos/corte-hilo-molibdeno.html">Corte por hilo de molibdeno</a>
+    <a href="../insumos/corte-hilo-laton.html">Corte por hilo de latón</a>
+    <a href="../insumos/inyectoras.html">Inyectoras</a>
+  </div>
+</div>
+      <a class="btn btn--primary" href="../index.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Nuestras Representadas -->
+  <section class="representadas">
+    <div class="representadas__header">
+      <h1 class="font-display">Nuestros Representantes</h1>
+      <div class="representadas__divider"></div>
+      <p class="representadas__subtitle">CALIDAD E INNOVACIÓN</p>
+    </div>
+
+    <div class="carousel" id="representadasCarousel">
+      <button class="carousel__arrow carousel__arrow--prev" aria-label="Anterior" id="carouselPrev">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+
+      <div class="carousel__viewport">
+        <div class="carousel__track" id="carouselTrack">
+
+          <a class="carousel__item" href=" https://www.accutex.com.tw/" target="_blank" rel="noopener noreferrer" title="ACCUTEX">
+            <img src="../assets/logos/accutex.png" alt="ACCUTEX" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="carousel__placeholder">ACCUTEX</span>
           </a>
-        </div>
-      </article>
 
-      <article class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-          <picture>
-            <img src="../assets/img/electroerosion-nspark.webp.jpeg" alt="Electroerosión" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
-          </picture>
-          <h3 style="margin-top: 1rem;">Máquina de electroerosión (EDM)</h3>
-          <p>Alta precisión para la industria metalmecánica.</p>
-        </div>
-        
-        <div style="margin-top: 1.5rem; text-align: center; border-top: 1px solid var(--line); padding-top: 1rem;">
-          <p style="font-size: 0.85rem; color: var(--muted); margin-bottom: 0.5rem;">Fabricante:</p>
-          <a href="#" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
-            <img src="../assets/img/logo-accutex-ejemplo.png" alt="Accutex" style="max-height: 40px;" onerror="this.outerHTML='<strong style=\'color: var(--brand-500);\'>ACCUTEX (Clic aquí)</strong>'">
+          <a class="carousel__item" href="https://www.en.novick.cn/" target="_blank" rel="noopener noreferrer" title="ADVANCED NOVICK">
+            <img src="../assets/logos/advanced-novick.png" alt="ADVANCED NOVICK" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="carousel__placeholder">ADVANCED NOVICK</span>
           </a>
-        </div>
-      </article>
 
-      </section>
-  </main>
+          <a class="carousel__item" href="https://borcheglobal.com/" target="_blank" rel="noopener noreferrer" title="BORCHE">
+            <img src="../assets/logos/borche.png" alt="BORCHE" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="carousel__placeholder">BORCHE</span>
+          </a>
+
+          <a class="carousel__item" href="https://www.nb-sml.com/products/index?lang=en" target="_blank" rel="noopener noreferrer" title="SMANL">
+            <img src="../assets/logos/smanl.png" alt="SMANL" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="carousel__placeholder">SMANL</span>
+          </a>
+
+          <a class="carousel__item" href="https://www.senfenglaser.com/" target="_blank" rel="noopener noreferrer" title="SENFENG">
+            <img src="../assets/logos/senfeng.png" alt="SENFENG" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="carousel__placeholder">SENFENG</span>
+          </a>
+
+          <a class="carousel__item" href="https://www.trade-max.com.tw/" target="_blank" rel="noopener noreferrer" title="TRADE-MAX">
+            <img src="../assets/logos/trade-max.png" alt="TRADE-MAX" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="carousel__placeholder">TRADE-MAX</span>
+          </a>
+
+          <a class="carousel__item" href="https://hisioncnc.vn/en/vertical-milling-center/" target="_blank" rel="noopener noreferrer" title="HISION">
+            <img src="../assets/logos/hision.png" alt="HISION" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="carousel__placeholder">HISION</span>
+          </a>
+
+          <a class="carousel__item" href="https://maxmill-cnc.com/" target="_blank" rel="noopener noreferrer" title="MAXMILL">
+            <img src="../assets/logos/maxmill.png" alt="MAXMILL" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="carousel__placeholder">MAXMILL</span>
+          </a>
+
+          <a class="carousel__item" href="https://www.mcmachinery.com/" target="_blank" rel="noopener noreferrer" title="MITSUBISHI ELECTRIC">
+            <img src="../assets/logos/mitsubishi.png" alt="MITSUBISHI ELECTRIC" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="carousel__placeholder">MITSUBISHI ELECTRIC</span>
+          </a>
+
+          <a class="carousel__item" href="https://www.harsle.com" target="_blank" rel="noopener noreferrer" title="HARSLE">
+            <img src="../assets/logos/harsle.png" alt="HARSLE" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="carousel__placeholder">HARSLE</span>
+          </a>
+
+        </div>
+      </div>
+
+      <button class="carousel__arrow carousel__arrow--next" aria-label="Siguiente" id="carouselNext">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+
+    <!-- Dots -->
+    <div class="carousel__dots" id="carouselDots"></div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container footer__grid">
+  <small>© M. A. COCCHIOLA S.A. — Todos los derechos reservados</small>
+  <small>Parque Industrial "La Cantábrica", Tres Arroyos 329, Haedo — (+54 11) 6091 7765</small>
+</div></footer>
+
+<a href="https://wa.me/5491130227007"
+   class="btn-wpp"
+   target="_blank"
+   rel="noopener"
+   aria-label="WhatsApp">
+  <img src="../assets/img/wpp.png" alt="WhatsApp" width="50" height="50">
+</a>
+<script src="../script.js"></script>
 </body>
 </html>
