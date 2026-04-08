@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Empresa | COCCHIOLA S.A.</title>
 
   <!-- Favicons -->
@@ -12,171 +14,187 @@
   <meta name="theme-color" content="#01963f">
 
   <!-- Fonts & CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <img src="assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40">
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-controls="siteMenu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="menu" id="siteMenu" aria-label="Navegación principal">
-      <a href="index.html">Inicio</a>
-      <a href="empresa.html" aria-current="page">Empresa</a>
 
-      <div class="dropdown" aria-expanded="false">
-        <button class="dropbtn" aria-haspopup="true" aria-expanded="false" aria-controls="dd-maquinas">Máquinas</button>
-        <div class="dropdown-menu" id="dd-maquinas" role="menu">
-          <a role="menuitem" href="maquinas/electroerosion.html">Electroerosión</a>
-          <a role="menuitem" href="maquinas/industria-plastica.html">Industria Plástica</a>
-          <a role="menuitem" href="maquinas/corte-laser.html">Corte Láser</a>
-          <a role="menuitem" href="maquinas/roscadoras.html">Roscadoras</a>
-          <a role="menuitem" href="maquinas/maquinas-herramienta.html">Máquinas Herramienta</a>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-controls="siteMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="siteMenu" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="empresa.html" aria-current="page">Empresa</a>
+
+        <div class="dropdown" aria-expanded="false">
+          <button class="dropbtn" aria-haspopup="true" aria-expanded="false"
+            aria-controls="dd-maquinas">Máquinas</button>
+          <div class="dropdown-menu" id="dd-maquinas" role="menu">
+            <a role="menuitem" href="maquinas/electroerosion.html">Electroerosión (EDM)</a>
+            <a role="menuitem" href="maquinas/industria-plastica.html">Industria Plástica</a>
+            <a role="menuitem" href="maquinas/corte-laser.html">Corte Láser</a>
+            <a role="menuitem" href="maquinas/roscadoras.html">Roscadoras</a>
+            <a role="menuitem" href="maquinas/maquinas-herramienta.html">Máquinas Herramienta</a>
+          </div>
         </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Insumos</button>
+          <div class="dropdown-menu">
+            <a href="insumos/corte-hilo-molibdeno.html">Corte por hilo de molibdeno</a>
+            <a href="insumos/corte-hilo-laton.html">Corte por hilo de latón</a>
+            <a href="insumos/industria-plastica.html">Industria Plástica</a>
+          </div>
+        </div>
+
+
+        <a class="btn btn--primary" href="index.html#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container card" style="margin-top:1rem">
+      <h1>Quiénes Somos</h1>
+
+      <h2>Introducción</h2>
+      <p>M.A. COCCHIOLA S.A. es una empresa argentina especializada en la venta de maquinaria para la industria y en la
+        prestación de servicio técnico especializado. Nos dedicamos a brindar soluciones integrales para el sector
+        industrial, acompañando a nuestros clientes en cada etapa del proceso productivo, desde la elección del equipo
+        adecuado hasta su puesta en marcha y mantenimiento.</p>
+      <p>Nuestro compromiso es ofrecer tecnología de calidad, respaldo técnico confiable y asesoramiento profesional,
+        contribuyendo al crecimiento y la eficiencia de las empresas que confían en nosotros.</p>
+
+      <h2>Nuestra Actividad</h2>
+      <p>En M.A. COCCHIOLA S.A. trabajamos con una amplia gama de máquinas industriales, adaptándonos a las necesidades
+        de distintos rubros productivos. Comercializamos y brindamos soporte técnico en:</p>
+      <ul>
+        <li>Máquinas de electroerosión (EDM)</li>
+        <li>Máquinas láser</li>
+        <li>Tornos (convencionales y CNC)</li>
+        <li>Centros de mecanizado CNC</li>
+        <li>Plegadoras</li>
+        <li>Rectificadoras</li>
+        <li>Inyectoras de plástico</li>
+        <li>Entre otros equipos industriales</li>
+      </ul>
+      <p>Nuestro equipo técnico cuenta con la experiencia necesaria para asesorar en la selección de maquinaria,
+        instalación, capacitación y mantenimiento preventivo y correctivo.</p>
+
+      <h2>Servicio Técnico y Soporte</h2>
+      <p>Uno de nuestros pilares fundamentales es el servicio técnico especializado, garantizando respuesta rápida,
+        eficiencia operativa y continuidad productiva para nuestros clientes. Entendemos que la maquinaria es el corazón
+        de la industria, por eso brindamos asistencia profesional, repuestos y acompañamiento permanente.</p>
+
+      <h2>Compromiso con la Industria</h2>
+      <p>En M.A. COCCHIOLA S.A. trabajamos con una visión orientada a la mejora continua, incorporando tecnología de
+        vanguardia y fortaleciendo relaciones a largo plazo con nuestros clientes. Nuestro objetivo es ser un socio
+        estratégico para la industria, ofreciendo soluciones confiables, eficientes y adaptadas a cada necesidad.</p>
+    </section>
+
+    <!-- Galería - Stories -->
+    <section class="container card" aria-labelledby="galeria-title">
+      <h2 id="galeria-title">Nuestra empresa en acción</h2>
+
+      <div class="stories" data-autoplay="true" data-interval="5000" aria-roledescription="carousel"
+        aria-label="Historias de la empresa" role="region">
+        <div class="stories__track" role="listbox" aria-live="polite">
+          <!-- Slide 1 -->
+          <figure class="stories__item is-active" role="option" aria-label="1 de 4" data-duration="6000">
+            <img src="assets/img/stand-frente.webp.jpeg" alt="Stand de COCCHIOLA con pantalla LED y área de reuniones"
+              width="1024" height="768" decoding="async">
+            <figcaption class="muted">Stand COCCHIOLA — Feria industrial</figcaption>
+          </figure>
+          <!-- Slide 2 -->
+          <figure class="stories__item" role="option" aria-label="2 de 4" data-duration="5000">
+            <img src="assets/img/stand-maquinas.webp.jpeg"
+              alt="Vista general de máquinas expuestas en el stand COCCHIOLA" width="1024" height="768" decoding="async"
+              loading="lazy">
+            <figcaption class="muted">Exhibición de maquinaria</figcaption>
+          </figure>
+          <!-- Slide 3 (vertical → cubre con object-fit) -->
+          <figure class="stories__item" role="option" aria-label="3 de 4" data-duration="5000">
+            <img src="assets/img/electroerosion-nspark.webp.jpeg"
+              alt="Equipo de electroerosión N-Spark en el stand COCCHIOLA" width="768" height="1024" decoding="async"
+              loading="lazy">
+            <figcaption class="muted">Electroerosión (EDM) N-Spark</figcaption>
+          </figure>
+          <!-- Slide 4 -->
+          <figure class="stories__item" role="option" aria-label="4 de 4" data-duration="5000">
+            <img src="assets/img/linea-borche.webp.jpeg"
+              alt="Línea de inyección BORCHE en exhibición con branding Cocchiola" width="1280" height="720"
+              decoding="async" loading="lazy">
+            <figcaption class="muted">Línea BORCHE en exhibición</figcaption>
+          </figure>
+        </div>
+
+        <!-- Progreso -->
+        <div class="stories__progress" aria-hidden="true">
+          <span class="stories__bar is-active"></span>
+          <span class="stories__bar"></span>
+          <span class="stories__bar"></span>
+          <span class="stories__bar"></span>
+        </div>
+
+        <!-- Tap zones / Controles -->
+        <button class="stories__tap stories__tap--prev" aria-label="Anterior"></button>
+        <button class="stories__tap stories__tap--next" aria-label="Siguiente"></button>
+      </div>
+    </section>
+
+
+    <!-- Ubicación / Mapa + botones Google Maps y Waze -->
+    <section id="ubicacion" class="container card" aria-labelledby="mapa-title">
+      <h2 id="mapa-title">Dónde estamos</h2>
+      <p class="muted" style="margin-top:-4px">
+        Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — (+54 11) 6091 7765
+      </p>
+
+      <!-- wrapper responsive 16:9 -->
+      <div
+        style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:14px; box-shadow:0 6px 20px rgba(0,0,0,.08); border:1px solid #e6e8ea">
+        <iframe title="Ubicación COCCHIOLA S.A." aria-label="Mapa con la ubicación de COCCHIOLA S.A."
+          src="https://www.google.com/maps?q=Parque+Industrial+La+Cant%C3%A1brica,+Tres+Arroyos+329,+Haedo&output=embed"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <div class="dropdown">
-  <button class="dropbtn">Insumos</button>
-  <div class="dropdown-menu">
-    <a href="insumos/corte-hilo-molibdeno.html">Corte por hilo de molibdeno</a>
-    <a href="insumos/corte-hilo-laton.html">Corte por hilo de latón</a>
-    <a href="insumos/industria-plastica.html">Industria Plástica</a>
-  </div>
-</div>  
+      <!-- Accesos de navegación -->
+      <div class="hero__cta" style="margin-top:.8rem">
+        <a class="btn btn--primary" target="_blank" rel="noopener"
+          href="https://maps.google.com/?q=Parque+Industrial+La+Cant%C3%A1brica,+Tres+Arroyos+329,+Haedo"
+          aria-label="Abrir ubicación en Google Maps">
+          Abrir en Google Maps
+        </a>
+        <a class="btn btn--outline" target="_blank" rel="noopener"
+          href="https://waze.com/ul?q=Parque%20Industrial%20La%20Cant%C3%A1brica%2C%20Tres%20Arroyos%20329%2C%20Haedo&navigate=yes"
+          aria-label="Abrir ubicación en Waze">
+          Abrir en Waze
+        </a>
+      </div>
+    </section>
 
+  </main>
 
-      <a class="btn btn--primary" href="index.html#contacto">Contacto</a>
-    </nav>
-  </div>
-</header>
-
-<main id="main">
-  <section class="container card" style="margin-top:1rem">
-    <h1>Quiénes Somos</h1>
-
-    <h2>Introducción</h2>
-    <p>M.A. COCCHIOLA S.A. es una empresa argentina especializada en la venta de maquinaria para la industria y en la prestación de servicio técnico especializado. Nos dedicamos a brindar soluciones integrales para el sector industrial, acompañando a nuestros clientes en cada etapa del proceso productivo, desde la elección del equipo adecuado hasta su puesta en marcha y mantenimiento.</p>
-    <p>Nuestro compromiso es ofrecer tecnología de calidad, respaldo técnico confiable y asesoramiento profesional, contribuyendo al crecimiento y la eficiencia de las empresas que confían en nosotros.</p>
-
-    <h2>Nuestra Actividad</h2>
-    <p>En M.A. COCCHIOLA S.A. trabajamos con una amplia gama de máquinas industriales, adaptándonos a las necesidades de distintos rubros productivos. Comercializamos y brindamos soporte técnico en:</p>
-    <ul>
-      <li>Máquinas de electroerosión (EDM)</li>
-      <li>Máquinas láser</li>
-      <li>Tornos (convencionales y CNC)</li>
-      <li>Centros de mecanizado</li>
-      <li>Plegadoras</li>
-      <li>Rectificadoras</li>
-      <li>Inyectoras de plástico</li>
-      <li>Entre otros equipos industriales</li>
-    </ul>
-    <p>Nuestro equipo técnico cuenta con la experiencia necesaria para asesorar en la selección de maquinaria, instalación, capacitación y mantenimiento preventivo y correctivo.</p>
-
-    <h2>Servicio Técnico y Soporte</h2>
-    <p>Uno de nuestros pilares fundamentales es el servicio técnico especializado, garantizando respuesta rápida, eficiencia operativa y continuidad productiva para nuestros clientes. Entendemos que la maquinaria es el corazón de la industria, por eso brindamos asistencia profesional, repuestos y acompañamiento permanente.</p>
-
-    <h2>Compromiso con la Industria</h2>
-    <p>En M.A. COCCHIOLA S.A. trabajamos con una visión orientada a la mejora continua, incorporando tecnología de vanguardia y fortaleciendo relaciones a largo plazo con nuestros clientes. Nuestro objetivo es ser un socio estratégico para la industria, ofreciendo soluciones confiables, eficientes y adaptadas a cada necesidad.</p>
-  </section>
-
-<!-- Galería - Stories -->
-<section class="container card" aria-labelledby="galeria-title">
-  <h2 id="galeria-title">Nuestra empresa en acción</h2>
-
- <div class="stories" data-autoplay="true" data-interval="5000"
-     aria-roledescription="carousel" aria-label="Historias de la empresa" role="region">
-    <div class="stories__track" role="listbox" aria-live="polite">
-      <!-- Slide 1 -->
-      <figure class="stories__item is-active" role="option" aria-label="1 de 4" data-duration="6000">
-        <img src="assets/img/stand-frente.webp.jpeg" alt="Stand de COCCHIOLA con pantalla LED y área de reuniones" width="1024" height="768" decoding="async">
-        <figcaption class="muted">Stand COCCHIOLA — Feria industrial</figcaption>
-      </figure>
-      <!-- Slide 2 -->
-      <figure class="stories__item" role="option" aria-label="2 de 4" data-duration="5000">
-        <img src="assets/img/stand-maquinas.webp.jpeg" alt="Vista general de máquinas expuestas en el stand COCCHIOLA" width="1024" height="768" decoding="async" loading="lazy">
-        <figcaption class="muted">Exhibición de maquinaria</figcaption>
-      </figure>
-      <!-- Slide 3 (vertical → cubre con object-fit) -->
-      <figure class="stories__item" role="option" aria-label="3 de 4" data-duration="5000">
-        <img src="assets/img/electroerosion-nspark.webp.jpeg" alt="Equipo de electroerosión N-Spark en el stand COCCHIOLA" width="768" height="1024" decoding="async" loading="lazy">
-        <figcaption class="muted">Electroerosión N-Spark</figcaption>
-      </figure>
-      <!-- Slide 4 -->
-      <figure class="stories__item" role="option" aria-label="4 de 4" data-duration="5000">
-        <img src="assets/img/linea-borche.webp.jpeg" alt="Línea de inyección BORCHE en exhibición con branding Cocchiola" width="1280" height="720" decoding="async" loading="lazy">
-        <figcaption class="muted">Línea BORCHE en exhibición</figcaption>
-      </figure>
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <small>© M. A. COCCHIOLA S.A. — Todos los derechos reservados</small>
+      <small>Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — (+54 11) 6091 7765</small>
     </div>
+  </footer>
 
-    <!-- Progreso -->
-    <div class="stories__progress" aria-hidden="true">
-      <span class="stories__bar is-active"></span>
-      <span class="stories__bar"></span>
-      <span class="stories__bar"></span>
-      <span class="stories__bar"></span>
-    </div>
+  <a href="https://wa.me/5491130227007" class="btn-wpp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <img src="assets/wpp.png" alt="WhatsApp" width="50" height="50">
+  </a>
 
-    <!-- Tap zones / Controles -->
-    <button class="stories__tap stories__tap--prev" aria-label="Anterior"></button>
-    <button class="stories__tap stories__tap--next" aria-label="Siguiente"></button>
-  </div>
-</section>
-
-
-  <!-- Ubicación / Mapa + botones Google Maps y Waze -->
-  <section id="ubicacion" class="container card" aria-labelledby="mapa-title">
-    <h2 id="mapa-title">Dónde estamos</h2>
-    <p class="muted" style="margin-top:-4px">
-      Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — (+54 11) 6091 7765
-    </p>
-
-    <!-- wrapper responsive 16:9 -->
-    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:14px; box-shadow:0 6px 20px rgba(0,0,0,.08); border:1px solid #e6e8ea">
-      <iframe
-        title="Ubicación COCCHIOLA S.A."
-        aria-label="Mapa con la ubicación de COCCHIOLA S.A."
-        src="https://www.google.com/maps?q=Parque+Industrial+La+Cant%C3%A1brica,+Tres+Arroyos+329,+Haedo&output=embed"
-        style="position:absolute; top:0; left:0; width:100%; height:100%; border:0"
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <!-- Accesos de navegación -->
-    <div class="hero__cta" style="margin-top:.8rem">
-      <a class="btn btn--primary" target="_blank" rel="noopener"
-         href="https://maps.google.com/?q=Parque+Industrial+La+Cant%C3%A1brica,+Tres+Arroyos+329,+Haedo"
-         aria-label="Abrir ubicación en Google Maps">
-         Abrir en Google Maps
-      </a>
-      <a class="btn btn--outline" target="_blank" rel="noopener"
-         href="https://waze.com/ul?q=Parque%20Industrial%20La%20Cant%C3%A1brica%2C%20Tres%20Arroyos%20329%2C%20Haedo&navigate=yes"
-         aria-label="Abrir ubicación en Waze">
-         Abrir en Waze
-      </a>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer__grid">
-    <small>© M. A. COCCHIOLA S.A. — Todos los derechos reservados</small>
-    <small>Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — (+54 11) 6091 7765</small>
-  </div>
-</footer>
-
-<a href="https://wa.me/5491130227007"
-   class="btn-wpp"
-   target="_blank"
-   rel="noopener"
-   aria-label="WhatsApp">
-  <img src="assets/wpp.png" alt="WhatsApp" width="50" height="50">
-</a>
-
-<script src="script.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
+
 </html>
