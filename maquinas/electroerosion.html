@@ -2,33 +2,35 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Industria Plástica | COCCHIOLA S.A.</title>
+  <title>Electroerosión (EDM) | COCCHIOLA S.A.</title>
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
   <link rel="manifest" href="../assets/site.webmanifest"><meta name="theme-color" content="#01963f">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="preload" as="style" href="../styles.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="../index.html"><img src="../assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40"></a>
+    <a class="brand" href="../index.html"><img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40"></a>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
     <nav class="menu" id="siteMenu">
       <a href="../index.html">Inicio</a>
       <a href="../empresa.html">Empresa</a>
       <div class="dropdown"><button class="dropbtn" aria-current="page">Máquinas</button>
         <div class="dropdown-menu">
-          <a href="electroerosion.html">Electroerosión (EDM)</a>
-          <a aria-current="page" href="industria-plastica.html">Industria Plástica</a>
+          <a aria-current="page" href="electroerosion.html">Electroerosión (EDM)</a>
+          <a href="industria-plastica.html">Industria Plástica</a>
           <a href="corte-laser.html">Corte Láser</a>
           <a href="roscadoras.html">Roscadoras</a>
           <a href="maquinas-herramienta.html">Máquinas Herramienta</a>
         </div>
       </div>
-<div class="dropdown">
+ <div class="dropdown">
   <button class="dropbtn">Insumos</button>
   <div class="dropdown-menu">
     <a href="../insumos/corte-hilo-molibdeno.html">Corte por hilo de molibdeno</a>
@@ -43,118 +45,33 @@
 
 <main class="container">
   <section class="card">
-    <h1>Máquinas y periféricos para la Industria Plástica</h1>
-    <p>Inyección, extrusión y periféricos (enfriadores, tolvas, secadores, manipuladores, etc.).</p>
+    <h1>Máquinas de Electroerosión (EDM)</h1>
+    <p>Soluciones EDM (corte por hilo, penetración y perforado).</p>
   </section>
 
-  <h2>Periféricos</h2>
   <section class="grid grid-auto">
     <article class="card">
       <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina4.png" alt="Cargador monofásico" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
+        <picture><img decoding="async" src="../assets/img/maquina2.png" alt="MITSUBISHI MV" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 8px; right: 8px; max-width: 40px; opacity: 0.7; pointer-events: none;">
       </div>
-      <h3>Cargador monofásico</h3>
-      <table class="specs" aria-label="Especificaciones Cargador monofásico">
-        <thead><tr><th colspan="2">Especificaciones</th></tr></thead>
+      <h3>MITSUBISHI MV</h3>
+      <table class="specs specs--wide" aria-label="Especificaciones MV 1200">
+        <thead><tr><th colspan="2">Especificaciones — MV 1200</th></tr></thead>
         <tbody>
-          <tr><td>Motor</td><td>1,1 kW</td></tr>
-          <tr><td>Capacidad</td><td>250 kg/h</td></tr>
-          <tr><td>Altura máx.</td><td>4,5 m</td></tr>
-          <tr><td>Volumen de tolva</td><td>6 L</td></tr>
-          <tr><td>Dimensiones</td><td>360 × 260 × 500 mm</td></tr>
-          <tr><td>Peso</td><td>10 kg</td></tr>
+          <tr><td>Tipo</td><td>Latón sumergida</td></tr>
+          <tr><td>Recorridos X/Y/Z (mm)</td><td>400 / 300 / 220</td></tr>
+          <tr><td>Recorridos U/V (mm)</td><td>60 / 60</td></tr>
+          <tr><td>Peso máximo de la pieza</td><td>500 kg</td></tr>
+          <tr><td>Altura máx. de corte</td><td>220 mm</td></tr>
+          <tr><td>Ángulo de corte</td><td>±15° / 200 mm</td></tr>
+          <tr><td>Enhebrado automático</td><td>Sí</td></tr>
+          <tr><td>Motorización ejes</td><td>Motores lineales</td></tr>
+          <tr><td>Pantalla táctil</td><td>Sí</td></tr>
+          <tr><td>Origen</td><td>Japón</td></tr>
+          <tr><td>Disponibilidad de tamaños</td><td>Varios tamaños disponibles</td></tr>
         </tbody>
       </table>
-      <div class="hero__cta"><a class="btn btn--primary" href="https://wa.me/5491130227007" target="_blank">Consultar</a><a class="btn btn--outline" href="../index.html#contacto">Pedir cotización</a></div>
-    </article>
-
-    <article class="card">
-      <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina5.png" alt="Chiller" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
-      </div>
-      <h3>Equipo de frío (chiller)</h3>
-      <table class="specs" aria-label="Especificaciones Chiller">
-        <thead><tr><th colspan="2">Especificaciones</th></tr></thead>
-        <tbody>
-          <tr><td>Capacidad de refrigeración</td><td>5 kW / 5.160 kcal/h</td></tr>
-          <tr><td>Potencia del compresor</td><td>2 hp</td></tr>
-          <tr><td>Carga de refrigerante</td><td>1,4 kg</td></tr>
-          <tr><td>Motor del ventilador</td><td>0,13 kW</td></tr>
-        </tbody>
-      </table>
-      <div class="hero__cta"><a class="btn btn--primary" href="https://wa.me/5491130227007" target="_blank">Consultar</a><a class="btn btn--outline" href="../index.html#contacto">Pedir cotización</a></div>
-    </article>
-
-    <article class="card">
-      <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina6.png" alt="Secador" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
-      </div>
-      <h3>Secador</h3>
-      <table class="specs" aria-label="Especificaciones Secador">
-        <thead><tr><th colspan="2">Especificaciones</th></tr></thead>
-        <tbody>
-          <tr><td>Capacidad</td><td>15 kg</td></tr>
-          <tr><td>Potencia del calefactor</td><td>2,7 kW</td></tr>
-          <tr><td>Potencia del soplador</td><td>120 W</td></tr>
-          <tr><td>Dimensiones externas (L × A × H)</td><td>660 × 360 × 800 mm</td></tr>
-          <tr><td>Dimensiones del asiento (L × A × H)</td><td>120 × 120 × 50 mm</td></tr>
-          <tr><td>Proyector adaptable</td><td>30–60 g</td></tr>
-          <tr><td>Peso</td><td>28 kg</td></tr>
-        </tbody>
-      </table>
-      <div class="hero__cta"><a class="btn btn--primary" href="https://wa.me/5491130227007" target="_blank">Consultar</a><a class="btn btn--outline" href="../index.html#contacto">Pedir cotización</a></div>
-    </article>
-  </section>
-
-  <h2 style="margin-top: 2rem;">Maquinas de inyeccion de plastico</h2>
-  <section class="grid grid-auto">
-    <article class="card">
-      <div style="position: relative; display: inline-block;">
-        <picture>
-          <img src="../assets/img/maquina16.png" alt="No ferrosos 1" loading="lazy" width="900" height="600">
-        </picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
-      </div>
-      <h3>Inyectora de plástico</h3>
-
-      <table class="specs" aria-label="Especificaciones SSF720">
-        <thead>
-          <tr><th colspan="2">Especificaciones — SSF720</th></tr>
-        </thead>
-        <tbody>
-          <tr><td colspan="2"><strong>Unidad de inyección</strong></td></tr>
-          <tr><td>Diámetro de husillo</td><td>34 mm</td></tr>
-          <tr><td>Relación L/D</td><td>21 L/D</td></tr>
-          <tr><td>Volumen de inyección</td><td>127 cm³</td></tr>
-          <tr><td>Peso de inyección (PS)</td><td>116 g (≈ 4,1 oz)</td></tr>
-          <tr><td>Capacidad de plastificación</td><td>11,6 g/s</td></tr>
-          <tr><td>Caudal de inyección</td><td>115 g/s</td></tr>
-          <tr><td>Presión de inyección</td><td>180 MPa</td></tr>
-          <tr><td>Velocidad del husillo</td><td>200 rpm</td></tr>
-          <tr><td colspan="2"><strong>Unidad de cierre</strong></td></tr>
-          <tr><td>Fuerza de cierre</td><td>720 kN</td></tr>
-          <tr><td>Carrera de apertura</td><td>300 mm</td></tr>
-          <tr><td>Distancia entre columnas (A × H)</td><td>330 × 330 mm</td></tr>
-          <tr><td>Espesor máx. de molde</td><td>360 mm</td></tr>
-          <tr><td>Espesor mín. de molde</td><td>130 mm</td></tr>
-          <tr><td>Carrera del expulsor</td><td>85 mm</td></tr>
-          <tr><td>Fuerza del expulsor</td><td>31 kN</td></tr>
-          <tr><td>Número de expulsores</td><td>5</td></tr>
-          <tr><td>Ø alojamiento del molde</td><td>100 mm</td></tr>
-          <tr><td colspan="2"><strong>Otros</strong></td></tr>
-          <tr><td>Presión máx. de la bomba</td><td>16 MPa</td></tr>
-          <tr><td>Motor de bomba</td><td>7,5 kW</td></tr>
-          <tr><td>Servomotor</td><td>13,4 kW</td></tr>
-          <tr><td>Potencia de calefacción</td><td>6 kW</td></tr>
-          <tr><td>Dimensiones (L × A × H)</td><td>3,90 × 1,20 × 1,65 m</td></tr>
-          <tr><td>Capacidad tanque de aceite</td><td>130 L</td></tr>
-          <tr><td>Peso de máquina</td><td>2,8 t</td></tr>
-        </tbody>
-      </table>
-
       <div class="hero__cta">
         <a class="btn btn--primary" href="https://wa.me/5491130227007" target="_blank" rel="noopener">Consultar</a>
         <a class="btn btn--outline" href="../index.html#contacto">Pedir cotización</a>
@@ -163,54 +80,54 @@
 
     <article class="card">
       <div style="position: relative; display: inline-block;">
-        <picture>
-          <img src="../assets/img/maquina17.png" alt="No ferrosos 2" loading="lazy" width="900" height="600">
-        </picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
+        <picture><img decoding="async" src="../assets/img/maquina1.png" alt="ACCUTEX GA 43 AL" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 8px; right: 8px; max-width: 40px; opacity: 0.7; pointer-events: none;">
       </div>
-      <h3>Inyectora de plástico</h3>
-
-      <table class="specs specs--wide specs--num-right" aria-label="Especificaciones Bi200">
-        <thead>
-          <tr><th colspan="2">Especificaciones — Bi200</th></tr>
-        </thead>
+      <h3>ACCUTEX EDM</h3>
+      <table class="specs specs--wide" aria-label="Especificaciones GA 43 AL">
+        <thead><tr><th colspan="2">Especificaciones — GA 43 AL</th></tr></thead>
         <tbody>
-          <tr><td colspan="2"><strong>Unidad de inyección</strong></td></tr>
-          <tr><td>Diámetro de husillo</td><td>Ø 45 / 50 / 60 mm</td></tr>
-          <tr><td>Volumen de inyección</td><td>389 / 481 / 692 cm³</td></tr>
-          <tr><td>Peso de inyección (PS)</td><td>354 / 438 / 630 g</td></tr>
-          <tr><td>Caudal de inyección (PS)</td><td>≈ 52 / 62 / 73 g/s</td></tr>
-          <tr><td>Presión de inyección</td><td>218 / 176 / 123 MPa</td></tr>
-          <tr><td>Relación L/D</td><td>23 / 21 / 17</td></tr>
-          <tr><td>Carrera de inyección</td><td>190 mm</td></tr>
-          <tr><td>Velocidad máx. del husillo</td><td>190 rpm</td></tr>
-          <tr><td>Fuerza de contacto de boquilla</td><td>30 kN</td></tr>
-          <tr><td>Carrera de boquilla</td><td>325 mm</td></tr>
-
-          <tr><td colspan="2"><strong>Unidad de cierre</strong></td></tr>
-          <tr><td>Fuerza de cierre</td><td>2000 kN</td></tr>
-          <tr><td>Carrera de apertura</td><td>510 mm</td></tr>
-          <tr><td>Platos (A × H)</td><td>770 × 770 mm</td></tr>
-          <tr><td>Distancia entre columnas (A × H)</td><td>530 × 530 mm</td></tr>
-          <tr><td>Apertura máxima (daylight)</td><td>1060 mm</td></tr>
-          <tr><td>Espesor de molde (mín–máx)</td><td>180–550 mm</td></tr>
-          <tr><td>Carrera del expulsor</td><td>150 mm</td></tr>
-          <tr><td>Fuerza del expulsor</td><td>49,5 kN</td></tr>
-          <tr><td>Agujeros para pernos expulsor</td><td>4 + 4 + 1</td></tr>
-
-          <tr><td colspan="2"><strong>Potencia / hidráulica</strong></td></tr>
-          <tr><td>Presión del sistema</td><td>17,5 MPa</td></tr>
-          <tr><td>Motor de bomba</td><td>18 kW</td></tr>
-          <tr><td>Potencia de calefacción</td><td>12,9 kW</td></tr>
-          <tr><td>Zonas de calentamiento</td><td>5</td></tr>
-
-          <tr><td colspan="2"><strong>Generales</strong></td></tr>
-          <tr><td>Capacidad tanque de aceite</td><td>270 L</td></tr>
-          <tr><td>Dimensiones (L × A × H)</td><td>5,65 × 1,65 × 2,28 m</td></tr>
-          <tr><td>Peso de máquina</td><td>6700 kg</td></tr>
+          <tr><td>Tipo</td><td>Latón sumergida</td></tr>
+          <tr><td>Recorridos X/Y/Z (mm)</td><td>880 / 630 / 215</td></tr>
+          <tr><td>Recorridos U/V (mm)</td><td>60 / 60</td></tr>
+          <tr><td>Peso máximo de la pieza</td><td>400 kg</td></tr>
+          <tr><td>Altura máx. de corte</td><td>215 mm</td></tr>
+          <tr><td>Ángulo de corte</td><td>±15° / 80 mm</td></tr>
+          <tr><td>Enhebrado automático</td><td>Sí</td></tr>
+          <tr><td>Motorización ejes</td><td>Motores lineales</td></tr>
+          <tr><td>Pantalla táctil</td><td>Sí</td></tr>
+          <tr><td>Origen</td><td>Taiwán</td></tr>
+          <tr><td>Disponibilidad de tamaños</td><td>Varios tamaños disponibles</td></tr>
         </tbody>
       </table>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="https://wa.me/5491130227007" target="_blank" rel="noopener">Consultar</a>
+        <a class="btn btn--outline" href="../index.html#contacto">Pedir cotización</a>
+      </div>
+    </article>
 
+    <article class="card">
+      <div style="position: relative; display: inline-block;">
+        <picture><img decoding="async" src="../assets/img/maquina3.png" alt="ADVANCED NOVICK AR 45" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 8px; right: 8px; max-width: 40px; opacity: 0.7; pointer-events: none;">
+      </div>
+      <h3>ADVANCED NOVICK</h3>
+      <table class="specs specs--wide" aria-label="Especificaciones AR 45">
+        <thead><tr><th colspan="2">Especificaciones — AR 45</th></tr></thead>
+        <tbody>
+          <tr><td>Tipo</td><td>Molibdeno</td></tr>
+          <tr><td>Recorridos X/Y/Z (mm)</td><td>450 / 350 / 300</td></tr>
+          <tr><td>Recorridos U/V (mm)</td><td>50 / 50</td></tr>
+          <tr><td>Peso máximo de la pieza</td><td>500 kg</td></tr>
+          <tr><td>Altura máx. de corte</td><td>300 mm</td></tr>
+          <tr><td>Ángulo de corte</td><td>±6° / 80 mm</td></tr>
+          <tr><td>Enhebrado automático</td><td>No</td></tr>
+          <tr><td>Motorización ejes</td><td>Servo motor</td></tr>
+          <tr><td>Pantalla táctil</td><td>No</td></tr>
+          <tr><td>Origen</td><td>China</td></tr>
+          <tr><td>Disponibilidad de tamaños</td><td>Varios tamaños disponibles</td></tr>
+        </tbody>
+      </table>
       <div class="hero__cta">
         <a class="btn btn--primary" href="https://wa.me/5491130227007" target="_blank" rel="noopener">Consultar</a>
         <a class="btn btn--outline" href="../index.html#contacto">Pedir cotización</a>
@@ -229,8 +146,8 @@
    target="_blank"
    rel="noopener"
    aria-label="WhatsApp">
-  <img src="../assets/img/wpp.png" alt="WhatsApp" width="50" height="50">
+  <img decoding="async" loading="lazy" src="../assets/img/wpp.png" alt="WhatsApp" width="50" height="50">
 </a>
-<script src="../script.js"></script>
+<script src="../script.js" defer></script>
 </body>
 </html>
