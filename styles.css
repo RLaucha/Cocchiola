@@ -123,11 +123,7 @@ h3{font-size:var(--fs-h3); line-height:1.25; margin:.2rem 0 var(--space-1)}
   padding:var(--space-3);
 }
 
-.grid{display:grid; gap:var(--space-2)}
-/* Grilla auto-ajustable (reutilizable): se adapta sola a ancho disponible */
-.grid-auto{grid-template-columns:repeat(auto-fit, minmax(260px,1fr))}
-.grid-2{grid-template-columns:repeat(2,1fr)}
-.grid-3{grid-template-columns:repeat(3,1fr); margin:var(--space-3) auto}
+
 
 /* Formularios */
 .form input,.form textarea{
@@ -276,15 +272,7 @@ h3{font-size:var(--fs-h3); line-height:1.25; margin:.2rem 0 var(--space-1)}
   .brand img{ height:34px !important; max-width:160px; }
 }
 
-/* 2) Grillas más cómodas: auto-fit con mínimo 300px (no se aprietan) */
-.grid,
-.grid-2,
-.grid-3,
-.grid-auto{
-  display:grid;
-  gap: var(--space-2);
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
+
 
 /* 3) Imágenes de cards con recorte elegante y altura consistente */
 .card picture{ 
@@ -409,16 +397,7 @@ main{ padding-left: 0; padding-right: 0; }
 /* WhatsApp flotante: que no tape nada útil en el borde */
 .wa-float{ margin-bottom: var(--space-3); }
 
-/* ====== (reconf) del logo para que no invada el header ====== */
-.brand img{
-  height:40px !important;
-  width:auto !important;
-  max-width:180px;
-  display:block;
-}
-@media (max-width: 860px){
-  .brand img{ height:34px !important; max-width:160px; }
-}
+
 /* ====== BODIAC: fuente para títulos ====== */
 @font-face{
   font-family: "BODIAC";
@@ -491,27 +470,7 @@ h1, h2, .font-display{
   display: flex; gap: 12px; justify-content: center; align-items: center; flex-wrap: wrap;
 }
 .splash .btn{ min-width: 180px; }
-/* Mapa más chico */
-.map{
-  width: 100%;
-  max-width: 720px;    /* no se estira más de 720px */
-  height: 300px;       /* más bajito */
-  margin: 0 auto;      /* centrado */
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  background: #0e1113;
-}
-.map__frame{
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
-}
-@media (max-width: 768px){
-  .map{ height: 220px; }
-}
+
 /* ===== Mapa estilizado (compacto y limpio) ===== */
 .map{
   width: 100%;
@@ -716,6 +675,7 @@ h1, h2, .font-display{
    ========================= */
 .specs{
   width:100%;
+  table-layout: fixed;
   border-collapse:separate;
   border-spacing:0;
   background:var(--surface, #fff);
@@ -747,6 +707,10 @@ h1, h2, .font-display{
   padding:.75rem 1rem;
   vertical-align:top;
   border-bottom:1px solid var(--border, #e5e7eb);
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 /* Etiquetas de bloque (filas con <strong>) */
@@ -772,10 +736,7 @@ h1, h2, .font-display{
   font-weight:600;
 }
 
-/* Contenedor responsivo por si una tabla desborda en móviles */
-.card:has(.specs){
-  overflow-x:auto;
-}
+
 
 /* Modo oscuro (si tu sitio lo usa por variables, igual funciona) */
 @media (prefers-color-scheme: dark){
@@ -816,6 +777,7 @@ h1, h2, .font-display{
    ========================= */
 .specs{
   width:100%;
+  table-layout: fixed;
   border-collapse:separate;
   border-spacing:0;
   background:var(--surface, #fff);
@@ -872,10 +834,7 @@ h1, h2, .font-display{
   font-weight:600;
 }
 
-/* Contenedor responsivo por si una tabla desborda en móviles */
-.card:has(.specs){
-  overflow-x:auto;
-}
+
 
 /* --------- Variantes opcionales --------- */
 
@@ -1255,4 +1214,9 @@ h1, h2, .font-display{
 
 
 
+
+
+
+/* Utility brand color */
+.text-brand { color: var(--brand, #01963f); }
 
