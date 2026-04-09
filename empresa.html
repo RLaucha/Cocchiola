@@ -17,14 +17,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="styles.css">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <img src="assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40">
+        <img src="assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40" loading="lazy" decoding="async">
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-controls="siteMenu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -64,7 +66,7 @@
     <section class="container card" style="margin-top:1rem">
       <h1>Quiénes Somos</h1>
 
-      <h2>Introducción</h2>
+      <h2 class="text-brand">Introducción</h2>
       <p>M.A. COCCHIOLA S.A. es una empresa argentina especializada en la venta de maquinaria para la industria y en la
         prestación de servicio técnico especializado. Nos dedicamos a brindar soluciones integrales para el sector
         industrial, acompañando a nuestros clientes en cada etapa del proceso productivo, desde la elección del equipo
@@ -72,7 +74,7 @@
       <p>Nuestro compromiso es ofrecer tecnología de calidad, respaldo técnico confiable y asesoramiento profesional,
         contribuyendo al crecimiento y la eficiencia de las empresas que confían en nosotros.</p>
 
-      <h2>Nuestra Actividad</h2>
+      <h2 class="text-brand">Nuestra Actividad</h2>
       <p>En M.A. COCCHIOLA S.A. trabajamos con una amplia gama de máquinas industriales, adaptándonos a las necesidades
         de distintos rubros productivos. Comercializamos y brindamos soporte técnico en:</p>
       <ul>
@@ -88,12 +90,12 @@
       <p>Nuestro equipo técnico cuenta con la experiencia necesaria para asesorar en la selección de maquinaria,
         instalación, capacitación y mantenimiento preventivo y correctivo.</p>
 
-      <h2>Servicio Técnico y Soporte</h2>
+      <h2 class="text-brand">Servicio Técnico y Soporte</h2>
       <p>Uno de nuestros pilares fundamentales es el servicio técnico especializado, garantizando respuesta rápida,
         eficiencia operativa y continuidad productiva para nuestros clientes. Entendemos que la maquinaria es el corazón
         de la industria, por eso brindamos asistencia profesional, repuestos y acompañamiento permanente.</p>
 
-      <h2>Compromiso con la Industria</h2>
+      <h2 class="text-brand">Compromiso con la Industria</h2>
       <p>En M.A. COCCHIOLA S.A. trabajamos con una visión orientada a la mejora continua, incorporando tecnología de
         vanguardia y fortaleciendo relaciones a largo plazo con nuestros clientes. Nuestro objetivo es ser un socio
         estratégico para la industria, ofreciendo soluciones confiables, eficientes y adaptadas a cada necesidad.</p>
@@ -109,7 +111,7 @@
           <!-- Slide 1 -->
           <figure class="stories__item is-active" role="option" aria-label="1 de 4" data-duration="6000">
             <img src="assets/img/stand-frente.webp.jpeg" alt="Stand de COCCHIOLA con pantalla LED y área de reuniones"
-              width="1024" height="768" decoding="async">
+              width="1024" height="768" decoding="async" loading="lazy">
             <figcaption class="muted">Stand COCCHIOLA — Feria industrial</figcaption>
           </figure>
           <!-- Slide 2 -->
@@ -154,7 +156,7 @@
     <section id="ubicacion" class="container card" aria-labelledby="mapa-title">
       <h2 id="mapa-title">Dónde estamos</h2>
       <p class="muted" style="margin-top:-4px">
-        Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — (+54 11) 6091 7765
+        Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — <span class="text-brand">(+54 11) 6091 7765</span>
       </p>
 
       <!-- wrapper responsive 16:9 -->
@@ -186,15 +188,16 @@
   <footer class="site-footer">
     <div class="container footer__grid">
       <small>© M. A. COCCHIOLA S.A. — Todos los derechos reservados</small>
-      <small>Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — (+54 11) 6091 7765</small>
+      <small>Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — <span class="text-brand">(+54 11) 6091 7765</span></small>
     </div>
   </footer>
 
   <a href="https://wa.me/5491130227007" class="btn-wpp" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <img src="assets/wpp.png" alt="WhatsApp" width="50" height="50">
+    <img src="assets/wpp.png" alt="WhatsApp" width="50" height="50" loading="lazy" decoding="async">
   </a>
 
   <script src="script.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
