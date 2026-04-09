@@ -9,12 +9,15 @@
   <link rel="manifest" href="../assets/site.webmanifest"><meta name="theme-color" content="#01963f">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="preload" as="style" href="../styles.css">
   <link rel="stylesheet" href="../styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="../index.html"><img src="../assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40"></a>
+    <a class="brand" href="../index.html"><img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40"></a>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
     <nav class="menu" id="siteMenu">
       <a href="../index.html">Inicio</a>
@@ -51,8 +54,8 @@
     <!-- Centro de mecanizado 1 -->
     <article class="card">
       <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina11.png" alt="Centro de mecanizado QMC-600" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
+        <picture><img decoding="async" src="../assets/img/maquina11.png" alt="Centro de mecanizado QMC-600" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
       </div>
       <h3>Centro de mecanizado</h3>
       <table class="specs" aria-label="Especificaciones QMC-600">
@@ -78,8 +81,8 @@
     <!-- Centro de mecanizado 2 -->
     <article class="card">
       <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina12.png" alt="Centro de mecanizado VMC1200" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
+        <picture><img decoding="async" src="../assets/img/maquina12.png" alt="Centro de mecanizado VMC1200" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
       </div>
       <h3>Centro de mecanizado</h3>
       <table class="specs" aria-label="Especificaciones VMC1200">
@@ -105,8 +108,8 @@
     <!-- Torno -->
     <article class="card">
       <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina13.png" alt="Torno TC25" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
+        <picture><img decoding="async" src="../assets/img/maquina13.png" alt="Torno TC25" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
       </div>
       <h3>Torno</h3>
       <table class="specs" aria-label="Especificaciones TC25">
@@ -127,8 +130,8 @@
     <!-- Rectificadora -->
     <article class="card">
       <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina14.png" alt="Rectificadora" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
+        <picture><img decoding="async" src="../assets/img/maquina14.png" alt="Rectificadora" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
       </div>
       <h3>Rectificadora</h3>
       <p>Rectificado de superficies planas y cilíndricas con tolerancias finas.</p>
@@ -141,8 +144,8 @@
     <!-- Plegadora -->
     <article class="card">
       <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina15.png" alt="Plegadora" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
+        <picture><img decoding="async" src="../assets/img/maquina15.png" alt="Plegadora" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
       </div>
       <h3>Plegadora</h3>
       <p>Máquina para plegado de chapas, precisión en ángulos y repetitividad.</p>
@@ -164,8 +167,10 @@
    target="_blank"
    rel="noopener"
    aria-label="WhatsApp">
-  <img src="../assets/img/wpp.png" alt="WhatsApp" width="50" height="50">
+  <img decoding="async" loading="lazy" src="../assets/img/wpp.png" alt="WhatsApp" width="50" height="50">
 </a>
-<script src="../script.js"></script>
+<script src="../script.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
+
