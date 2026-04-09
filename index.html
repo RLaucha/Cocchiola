@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="styles.css">
   <link rel="stylesheet" href="styles.css">
   <!-- Preload del hero (WebP + fallback PNG). El browser usa el que corresponda -->
   <link rel="preload" as="image" href="assets/img/hero-cocchiola-1280.webp" imagesrcset="
@@ -23,6 +24,7 @@
     assets/img/hero-cocchiola-1280.webp 1280w,
     assets/img/hero-cocchiola-1920.webp 1920w" imagesizes="(max-width: 900px) 100vw, 50vw" type="image/webp">
   <link rel="preload" as="image" href="assets/img/logomejorado.png"> <!-- fallback: tu imagen actual -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,7 +54,7 @@
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <img src="assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40">
+        <img src="assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40" loading="lazy" decoding="async">
       </a>
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"
         id="navToggle"><span></span><span></span><span></span></button>
@@ -86,16 +88,16 @@
     <!-- Hero -->
     <section id="inicio" class="hero hero-brand container">
       <div class="hero-brand__text">
-        <h1 class="font-display">M.A. COCCHIOLA S.A.</h1>
+        <h1 class="font-display" data-aos="fade-up">M.A. COCCHIOLA S.A.</h1>
         <p>Maquinas y equipos para la industria.</p>
         <div class="hero__cta">
           <a class="btn btn--primary" href="#contacto">Solicitar asesoramiento</a>
-          <a href="maquinas/todas.html" class="btn btn--primary">Ver Líneas</a>
+          <a href="maquinas/todas.html" class="btn btn--primary" style="background:#222; border-color:#222">Marcas Representadas</a>
         </div>
       </div>
 
       <!-- Imagen decorativa del hero -->
-      <figure class="hero-brand__media" aria-hidden="true">
+      <figure class="hero-brand__media" aria-hidden="true" data-aos="fade-up" data-aos-delay="200">
         <img src="assets/img/logomejorado.png" alt="" width="1024" height="243" loading="eager" decoding="async">
       </figure>
     </section>
@@ -124,6 +126,10 @@
         <h3>Máquinas Herramienta</h3>
         <p>Fresadoras, tornos, centros.</p><a class="link" href="maquinas/maquinas-herramienta.html">Ver más →</a>
       </article>
+      <article class="card">
+        <h3>Insumos para Máquinas de Electroerosión</h3>
+        <p>Hilos, guías, filtros y repuestos para EDM.</p><a class="link" href="insumos/insumos-electroerosion.html">Ver más →</a>
+      </article>
     </section>
 
     <!-- Empresa -->
@@ -137,37 +143,36 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="container card">
+    <section id="contacto" class="container card" style="text-align: center; padding: 3.5rem 1.5rem;">
       <h2>Contacto y Asesoramiento</h2>
-      <p class="muted" style="margin-top:-4px;">Escribinos a <a
-          href="mailto:ventas@cocchiola.com.ar">ventas@cocchiola.com.ar</a>.</p>
-      <form class="form" id="contactForm" novalidate>
-        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-        <div class="grid grid-2">
-          <input type="text" name="nombre" placeholder="Nombre" required>
-          <input type="email" name="email" placeholder="Email" required>
-        </div>
-        <input type="tel" name="telefono" placeholder="Teléfono">
-        <textarea name="mensaje" rows="5" placeholder="Contanos qué necesitás" required></textarea>
-        <button class="btn btn--primary" type="submit">Enviar</button>
-        <p id="formStatus" class="muted" style="margin-top:.6rem;"></p>
-      </form>
+      <p class="muted" style="margin-bottom: 2rem;">Comunicate con nosotros de forma directa ingresando a los siguientes teléfonos:</p>
+      <div style="font-size: 1.1rem; font-weight: 700; display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 1.5rem;">
+        <a href="https://wa.me/5491130282636" target="_blank" rel="noopener" class="btn btn--outline" style="display:inline-flex; align-items:center; gap:10px; color:var(--brand); border-color:var(--brand); border-width: 2px;">
+          <img src="assets/wpp.png" alt="WhatsApp" width="28" height="28">
+          WhatsApp — Asesor 1
+        </a>
+        <a href="https://wa.me/5491165632777" target="_blank" rel="noopener" class="btn btn--outline" style="display:inline-flex; align-items:center; gap:10px; color:var(--brand); border-color:var(--brand); border-width: 2px;">
+          <img src="assets/wpp.png" alt="WhatsApp" width="28" height="28">
+          WhatsApp — Asesor 2
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer__grid">
       <small>© M. A. COCCHIOLA S.A. — Todos los derechos reservados</small>
-      <small>Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — (+54 11) 6091 7765</small>
+      <small>Parque Industrial “La Cantábrica”, Tres Arroyos 329, Haedo — <span class="text-brand">(+54 11) 6091 7765</span></small>
     </div>
   </footer>
 
   <a href="https://wa.me/5491130227007" class="btn-wpp" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <img src="assets/wpp.png" alt="WhatsApp" width="50" height="50">
+    <img src="assets/wpp.png" alt="WhatsApp" width="50" height="50" loading="lazy" decoding="async">
   </a>
 
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
