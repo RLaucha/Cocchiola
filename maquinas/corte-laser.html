@@ -9,12 +9,15 @@
   <link rel="manifest" href="../assets/site.webmanifest"><meta name="theme-color" content="#01963f">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="preload" as="style" href="../styles.css">
   <link rel="stylesheet" href="../styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="../index.html"><img src="../assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40"></a>
+    <a class="brand" href="../index.html"><img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40"></a>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
     <nav class="menu" id="siteMenu">
       <a href="../index.html">Inicio</a>
@@ -44,15 +47,15 @@
 <main class="container">
   <section class="card">
     <h1>Corte Láser</h1>
-    <p>Máquinas de corte láser (fibra/CO₂) para chapa, tubo y perfiles. Alta velocidad y repetibilidad.</p>
+    <p>Máquinas de corte láser fibra para chapa, tubo y perfiles. Alta velocidad y repetibilidad.</p>
   </section>
 
   <section class="grid grid-auto">
     <!-- Máquina 1 -->
     <article class="card">
       <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina7.png" alt="Láser 1" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
+        <picture><img decoding="async" src="../assets/img/maquina7.png" alt="Láser 1" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
       </div>
       <h3>Corte para chapa</h3>
       <table class="specs" aria-label="Especificaciones SF6015C">
@@ -86,8 +89,8 @@
     <!-- Máquina 2 -->
     <article class="card">
       <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina8.png" alt="Láser 2" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
+        <picture><img decoding="async" src="../assets/img/maquina8.png" alt="Láser 2" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
       </div>
       <h3>Corte para chapa y tubo</h3>
       <table class="specs" aria-label="Especificaciones SF3015C">
@@ -121,8 +124,8 @@
     <!-- Máquina 3 -->
     <article class="card">
       <div style="position: relative; display: inline-block;">
-        <picture><img src="../assets/img/maquina9.png" alt="Láser 3" loading="lazy" width="900" height="600"></picture>
-        <img src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
+        <picture><img decoding="async" src="../assets/img/maquina9.png" alt="Láser 3" loading="lazy" width="900" height="600"></picture>
+        <img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="" style="position: absolute; top: 10px; right: 10px; max-width: 50px; opacity: 0.7; pointer-events: none;">
       </div>
       <h3>Corte para chapa carenada</h3>
       <table class="specs" aria-label="Especificaciones SF3015HM">
@@ -167,10 +170,12 @@
    target="_blank"
    rel="noopener"
    aria-label="WhatsApp">
-  <img src="../assets/img/wpp.png" alt="WhatsApp" width="50" height="50">
+  <img decoding="async" loading="lazy" src="../assets/img/wpp.png" alt="WhatsApp" width="50" height="50">
 </a>
 
 
-<script src="../script.js"></script>
+<script src="../script.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
+
