@@ -319,3 +319,16 @@ form?.addEventListener('submit', async (e)=>{
 })();
 
 
+
+/* ====== Animaciones Globales AOS ====== */
+document.querySelectorAll('.grid').forEach(grid => {
+  Array.from(grid.querySelectorAll('.card')).forEach((card, index) => {
+    card.setAttribute('data-aos', 'fade-up');
+    card.setAttribute('data-aos-delay', (index * 100).toString());
+  });
+});
+document.querySelectorAll('main section.card h2').forEach(h2 => h2.setAttribute('data-aos', 'fade-right'));
+document.querySelectorAll('main section.card p, main section.card ul').forEach(el => el.setAttribute('data-aos', 'fade-left'));
+
+// Delay de offset para los elementos generados asincrónicamente o que requieran recalculo
+setTimeout(() => { AOS.init({ duration: 800 }); }, 50);
