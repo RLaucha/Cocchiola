@@ -11,12 +11,15 @@
   <link rel="manifest" href="../assets/site.webmanifest"><meta name="theme-color" content="#01963f">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="preload" as="style" href="../styles.css">
   <link rel="stylesheet" href="../styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="../index.html"><img src="../assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40"></a>
+    <a class="brand" href="../index.html"><img decoding="async" loading="lazy" src="../assets/logo-cocchiola-transparent.png" alt="COCCHIOLA" width="160" height="40"></a>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
     <nav class="menu" id="siteMenu">
       <a href="../index.html">Inicio</a>
@@ -43,83 +46,67 @@
   </div>
 </header>
 
-<main>
-  <!-- Nuestras Representadas -->
-  <section class="representadas">
-    <div class="representadas__header">
-      <h1 class="font-display">Nuestros Representantes</h1>
-      <div class="representadas__divider"></div>
-      <p class="representadas__subtitle">CALIDAD E INNOVACIÓN</p>
+<main>  <section class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <div class="representadas__header" style="text-align: center; margin-bottom: 3rem;">
+      <h1 class="font-display">MARCAS REPRESENTADAS</h1>
+      <div class="representadas__divider" style="margin: 1rem auto;"></div>
     </div>
 
-    <div class="carousel" id="representadasCarousel">
-      <button class="carousel__arrow carousel__arrow--prev" aria-label="Anterior" id="carouselPrev">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      </button>
+    <div class="grid grid-auto">
+      <article class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: flex-start; padding: 2.5rem 1.5rem;">
+        <img loading="lazy" decoding="async" src="../assets/logos/accutex.png" alt="ACCUTEX" style="height: 80px; width: 100%; max-width: 220px; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;"></h3>
+        <p class="muted small" style="margin: 0;">Máquinas de corte por hilo de latón.</p>
+      </article>
 
-      <div class="carousel__viewport">
-        <div class="carousel__track" id="carouselTrack">
+      <article class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: flex-start; padding: 2.5rem 1.5rem;">
+        <img loading="lazy" decoding="async" src="../assets/logos/advanced-novick.png" alt="NOVICK" style="height: 80px; width: 100%; max-width: 220px; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;"></h3>
+        <p class="muted small" style="margin: 0;">Máquinas de corte por hilo de molibdeno y electroerosionadoras por penetración.</p>
+      </article>
 
-          <a class="carousel__item" href=" https://www.accutex.com.tw/" target="_blank" rel="noopener noreferrer" title="ACCUTEX">
-            <img src="../assets/logos/accutex.png" alt="ACCUTEX" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <span class="carousel__placeholder">ACCUTEX</span>
-          </a>
+      <article class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: flex-start; padding: 2.5rem 1.5rem;">
+        <img loading="lazy" decoding="async" src="../assets/logos/borche.png" alt="BORCHE" style="height: 80px; width: 100%; max-width: 220px; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;"></h3>
+        <p class="muted small" style="margin: 0;">Máquinas inyectoras de plástico.</p>
+      </article>
 
-          <a class="carousel__item" href="https://www.en.novick.cn/" target="_blank" rel="noopener noreferrer" title="ADVANCED NOVICK">
-            <img src="../assets/logos/advanced-novick.png" alt="ADVANCED NOVICK" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <span class="carousel__placeholder">ADVANCED NOVICK</span>
-          </a>
+      <article class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: flex-start; padding: 2.5rem 1.5rem;">
+        <img loading="lazy" decoding="async" src="../assets/logos/smanl.png" alt="SMANL" style="height: 80px; width: 100%; max-width: 220px; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;"></h3>
+        <p class="muted small" style="margin: 0;">Periféricos para la industria plástica.</p>
+      </article>
 
-          <a class="carousel__item" href="https://borcheglobal.com/" target="_blank" rel="noopener noreferrer" title="BORCHE">
-            <img src="../assets/logos/borche.png" alt="BORCHE" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <span class="carousel__placeholder">BORCHE</span>
-          </a>
+      <article class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: flex-start; padding: 2.5rem 1.5rem;">
+        <img loading="lazy" decoding="async" src="../assets/logos/senfeng.png" alt="SENFENG" style="height: 80px; width: 100%; max-width: 220px; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;"></h3>
+        <p class="muted small" style="margin: 0;">Máquinas de corte láser de fibra (chapa y tubo), máquinas de corte y grabado láser, soldadoras láser y equipos de limpieza láser.</p>
+      </article>
 
-          <a class="carousel__item" href="https://www.nb-sml.com/products/index?lang=en" target="_blank" rel="noopener noreferrer" title="SMANL">
-            <img src="../assets/logos/smanl.png" alt="SMANL" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <span class="carousel__placeholder">SMANL</span>
-          </a>
+      <article class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: flex-start; padding: 2.5rem 1.5rem;">
+        <img loading="lazy" decoding="async" src="../assets/logos/trade-max.png" alt="TRADE MAX" style="height: 80px; width: 100%; max-width: 220px; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;"></h3>
+        <p class="muted small" style="margin: 0;">Máquinas roscadoras.</p>
+      </article>
 
-          <a class="carousel__item" href="https://www.senfenglaser.com/" target="_blank" rel="noopener noreferrer" title="SENFENG">
-            <img src="../assets/logos/senfeng.png" alt="SENFENG" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <span class="carousel__placeholder">SENFENG</span>
-          </a>
+      <article class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: flex-start; padding: 2.5rem 1.5rem;">
+        <img loading="lazy" decoding="async" src="../assets/logos/hision.png" alt="HISION" style="height: 80px; width: 100%; max-width: 220px; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;"></h3>
+        <p class="muted small" style="margin: 0;">Máquinas de centro de mecanizado verticales (VMC) o de doble columna, tornos CNC y máquinas de mecanizado horizontal.</p>
+      </article>
 
-          <a class="carousel__item" href="https://www.trade-max.com.tw/" target="_blank" rel="noopener noreferrer" title="TRADE-MAX">
-            <img src="../assets/logos/trade-max.png" alt="TRADE-MAX" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <span class="carousel__placeholder">TRADE-MAX</span>
-          </a>
+      <article class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: flex-start; padding: 2.5rem 1.5rem;">
+        <img loading="lazy" decoding="async" src="../assets/logos/maxmill.png" alt="MAXMILL" style="height: 80px; width: 100%; max-width: 220px; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;"></h3>
+        <p class="muted small" style="margin: 0;">Máquinas de centro de mecanizados verticales (VMC).</p>
+      </article>
 
-          <a class="carousel__item" href="https://hisioncnc.vn/en/vertical-milling-center/" target="_blank" rel="noopener noreferrer" title="HISION">
-            <img src="../assets/logos/hision.png" alt="HISION" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <span class="carousel__placeholder">HISION</span>
-          </a>
-
-          <a class="carousel__item" href="https://maxmill-cnc.com/" target="_blank" rel="noopener noreferrer" title="MAXMILL">
-            <img src="../assets/logos/maxmill.png" alt="MAXMILL" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <span class="carousel__placeholder">MAXMILL</span>
-          </a>
-
-          <a class="carousel__item" href="https://www.mcmachinery.com/" target="_blank" rel="noopener noreferrer" title="MITSUBISHI ELECTRIC">
-            <img src="../assets/logos/mitsubishi.png" alt="MITSUBISHI ELECTRIC" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <span class="carousel__placeholder">MITSUBISHI ELECTRIC</span>
-          </a>
-
-          <a class="carousel__item" href="https://www.harsle.com" target="_blank" rel="noopener noreferrer" title="HARSLE">
-            <img src="../assets/logos/harsle.png" alt="HARSLE" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <span class="carousel__placeholder">HARSLE</span>
-          </a>
-
-        </div>
-      </div>
-
-      <button class="carousel__arrow carousel__arrow--next" aria-label="Siguiente" id="carouselNext">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-      </button>
+      <article class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: flex-start; padding: 2.5rem 1.5rem;">
+        <img loading="lazy" decoding="async" src="../assets/logos/harsle.png" alt="HARSLE" style="height: 80px; width: 100%; max-width: 220px; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;"></h3>
+        <p class="muted small" style="margin: 0;">Máquinas plegadoras.</p>
+      </article>
     </div>
-
-    <!-- Dots -->
-    <div class="carousel__dots" id="carouselDots"></div>
   </section>
 </main>
 
@@ -133,8 +120,11 @@
    target="_blank"
    rel="noopener"
    aria-label="WhatsApp">
-  <img src="../assets/img/wpp.png" alt="WhatsApp" width="50" height="50">
+  <img decoding="async" loading="lazy" src="../assets/img/wpp.png" alt="WhatsApp" width="50" height="50">
 </a>
-<script src="../script.js"></script>
+<script src="../script.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
+
+
